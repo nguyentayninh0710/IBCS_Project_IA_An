@@ -18,3 +18,51 @@ new Chart(pieChart, {
         }]
     }
 })
+
+const baseOptions ={
+    responsive: true, 
+    //maintainAspectRatio: false,
+    plugins: {
+        legend: {display: true, position: 'bottom'},
+        tooltip: { enable: true}
+    },
+    layout: { padding: 0}
+}
+
+const lineChart = document.getElementById('lineChart').getContext('2d');
+
+if (lineChart){
+    new Chart(lineChart, {
+        type: 'line',
+        data: {
+            lables: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+            datasets: [
+                {
+                    lable: 'Team A',
+                    data: [15, 30, 45, 60, 75, 90],
+                    borderColor: ' #ab2c50', 
+                    backgroundColor: ' #54051b',
+                    fill: true, 
+                    tension: 0.35, 
+                    pointRadius: 3
+                },
+                {
+                    lable: 'Team B',
+                    data: [20, 40, 60, 80, 100, 120],
+                    borderColor: 'rgb(136, 77, 94)', 
+                    backgroundColor: 'rgb(230, 34, 90)',
+                    fill: true, 
+                    tension: 0.35, 
+                    pointRadius: 3
+                },
+            ]
+        },
+        options: {
+            ...baseOptions,
+            scales: {
+                x: { grid: {display: flase}},
+                y: { beginAtZero: true }
+            }
+        }
+    }) 
+}
