@@ -1,55 +1,19 @@
-body {
-  background-color: #f0f8ff;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.3rem;
+.custom-navbar{
+   border: 1px solid black;
+   border-radius: 9px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
 }
 
-.hero {
-  background: linear-gradient(to right, #87cefa, #00bcd4);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
+.navbar-brand span{
+   line-height: 1.2;
+}
+   
+.custom-link.active{
+   background-color:cyan;
+   font-weight: 600;
 }
 
-.hero h1 {
-  font-weight: bold;
-  font-size: 3.5rem;
-}
-
-.section-title {
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-.card img {
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.card-title {
-  font-weight: 600;
-  color: #0077b6;
-  font-size: 1.2rem;
-}
-
-footer {
-  background-color: #0077b6;
-}
-
-.btn-rounded {
-  border-radius: 50px;
-}
-
-/* style.css */
-
-.carousel-item img {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;  
-}
-
+.layout { margin-top: 72px; }
+    aside { width: 250px; min-height: 100vh; }
