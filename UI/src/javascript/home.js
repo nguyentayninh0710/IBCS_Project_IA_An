@@ -88,7 +88,7 @@ function getLastSevenMonths(){
         //2025-02-01
         lables.push(d.toLocaleString('en-US', { month: 'short'}));
     }
-    console.log(Math.floor (Math.random));
+
     // random 0 -> 1
     Math.random()
     // Returns the greatest integer less than or equal to its numeric argument.
