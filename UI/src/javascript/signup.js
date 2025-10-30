@@ -14,7 +14,7 @@
   const API_BASE = OVERRIDE || `${location.protocol}//${location.hostname}:8000`;
 
   const ROUTES = {
-    register: `${API_BASE}/api/auth/register`
+    register: `${API_BASE}/api/users`
   };
 
   // ---------- DOM ----------
