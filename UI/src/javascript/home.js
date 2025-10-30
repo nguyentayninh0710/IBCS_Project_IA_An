@@ -6,7 +6,7 @@
   "use strict";
 
   // ----- API config (same as login.js) -----
-  const API_BASE = `${location.protocol}//${location.hostname}:8001`;
+  const API_BASE = `${location.protocol}//${location.hostname}:8000`;
   const ROUTES = {
     login: `${API_BASE}/api/auth/login`,
     refresh: `${API_BASE}/api/auth/refresh`,

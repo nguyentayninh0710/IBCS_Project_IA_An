@@ -1,0 +1,36 @@
+/* Works alongside your existing exercises.css */
+
+/* Accent bars for the player (like your sketch) */
+#videoWrap { border-top: 4px solid #6f42c1; border-bottom: 4px solid #dc3545; }
+
+/* Figure + checklist */
+.body-figure {
+  width: 96px; height: auto; border-radius: .5rem;
+  background: #e9ecef; border: 1px solid #dcdcdc;
+}
+.body-area-list li {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .25rem 0; text-transform: capitalize; font-weight: 600; color: #1f2328;
+}
+.body-area-list .box {
+  width: 22px; height: 22px; border: 2px solid #4b4f54; border-radius: .35rem; display: inline-block;
+}
+.body-area-list li.active .box { background: #212529; border-color: #212529; }
+.body-area-list li:not(.active) { color: #6c757d; }
+
+/* Pills */
+.pill-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #6b6e72; color: #fff; padding: .6rem 1rem; border-radius: 999px;
+  font-weight: 600; letter-spacing: .02em;
+}
+
+/* Description panel */
+.desc-box {
+  background: #e1e3e7; border: 1px solid #d0d4d9; border-radius: .85rem; padding: .9rem 1rem;
+  min-height: 130px;
+}
+.desc-text { white-space: pre-wrap; color: #1f2328; font-weight: 500; }
+
+/* Breadcrumb/subtitle style parity */
+#subTitle { font-weight: 600; letter-spacing: .02em; }
